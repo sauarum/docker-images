@@ -1,6 +1,6 @@
 # Use latest jboss/wildfly image as the base 
 # https://hub.docker.com/r/jboss/wildfly/
-FROM jboss/wildfly
+FROM jboss/wildfly:latest
 
 # Add a user in administration realm
 RUN /opt/jboss/wildfly/bin/add-user.sh admin Admin#007 --silent
